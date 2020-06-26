@@ -1,0 +1,79 @@
+{
+    "capabilities": [
+        { "name": "battery", "categories": [ "power" ] },
+        { "name": "power-jack", "categories": [ "power" ] },
+        { "name": "monochrome-screen", "categories": [ "display" ] },
+        { "name": "tft-screen", "categories": [ "display" ] },
+        { "name": "led-screen", "categories": [ "display" ] },
+        { "name": "keypad", "categories": [ "interaction" ] },
+        { "name": "keyboard", "categories": [ "interaction" ] },
+        { "name": "touch-screen", "categories": [ "display", "interaction" ] },
+        { "name": "camera", "categories": [ "imaging" ] },
+        { "name": "selfie-camera", "categories": [ "imaging" ] },
+        { "name": "cell-network", "categories": [ "communication" ] },
+        { "name": "sms", "categories": [ "communication" ] },
+        { "name": "2g", "categories": [ "connectivity" ] },
+        { "name": "3g", "categories": [ "connectivity" ] },
+        { "name": "4g", "categories": [ "connectivity" ] },
+        { "name": "wifi", "categories": [ "communication", "connectivity" ] },
+        { "name": "bluetooth", "categories": [ "peripherals" ] },
+        { "name": "nfc", "categories": [ "peripherals" ] },
+        { "name": "usb", "categories": [ "peripherals", "power" ] },
+        { "name": "java", "categories": [ "software" ] },
+        { "name": "android", "categories": [ "software", "os" ] },
+        { "name": "ios", "categories": [ "software", "os" ] }
+    ],
+    "cellphones": [
+        {
+            "name": "Nokia 1100",
+            "capabilities": [ "battery", "monochrome-screen", "power-jack", "cell-network", "sms", "keypad" ]
+        },
+        {
+            "name": "LG C110",
+            "capabilities": [ "battery", "tft-screen", "power-jack", "keypad", "cell-network", "sms", "bluetooth", "java" ]
+        },
+        {
+            "name": "BlackBerry 5500",
+            "capabilities": [ "battery", "tft-screen", "keyboard", "cell-network", "2g", "camera", "bluetooth", "usb", "java" ]
+        },
+        {
+            "name": "Samsung Galaxy S Advance",
+            "capabilities": [ "battery", "led-screen", "touch-screen", "usb", "camera", "cell-network", "sms", "3g", "wifi", "bluetooth", "usb", "android" ]
+        },
+        {
+            "name": "Motorola Moto G5 Plus",
+            "capabilities": [ "battery", "led-screen", "touch-screen", "usb", "camera", "selfie-camera", "cell-network", "sms", "4g", "wifi", "bluetooth", "usb", "android", "nfc" ]
+        },
+        {
+            "name": "iPhone 7",
+            "capabilities": [ "battery", "led-screen", "touch-screen", "usb", "camera", "selfie-camera", "cell-network", "sms", "4g", "wifi", "bluetooth", "usb", "ios", "nfc" ]
+        }
+    ],
+    "applications": [
+        {
+            "name": "Phone",
+            "required_categories": [ "interaction", "display" ],
+            "required_capabilities": [ "cell-network" ]
+        },
+        {
+            "name": "Snake Reloaded",
+            "required_categories": [ "display", "interaction" ],
+            "required_capabilities": [ "java" ]
+        },
+        {
+            "name": "WhatsApp",
+            "required_categories": [ "display", "connectivity", "interaction", "os" ],
+            "required_capabilities": []
+        },
+        {
+            "name": "GCam",
+            "required_categories": [ "imaging" ],
+            "required_capabilities": [ "android" ]
+        },
+        {
+            "name": "Apple Pay",
+            "required_categories": [ "connectivity" ],
+            "required_capabilities": [ "ios", "nfc" ]
+        }
+    ]
+}
